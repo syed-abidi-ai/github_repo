@@ -29,3 +29,15 @@ jobs:
         run: |
           env
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Printing lscpu
+        run: |
+          lscpu
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Printing free memory
+        run: |
+          free -g
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Printing free disk
+        run: |
+          df -h 
+      - run: echo "🍏 This job's status is ${{ job.status }}."
