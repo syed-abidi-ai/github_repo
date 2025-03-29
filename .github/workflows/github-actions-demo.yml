@@ -21,3 +21,11 @@ jobs:
           cat /etc/os-release
           cat /etc/passwd
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Run WHO AM I
+        run: |
+          whoami 
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Run WHO AM I
+        run: |
+          env
+      - run: echo "🍏 This job's status is ${{ job.status }}."
