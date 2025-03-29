@@ -25,7 +25,7 @@ jobs:
         run: |
           whoami 
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - name: Run WHO AM I
+      - name: Printing ENV
         run: |
           env
       - run: echo "🍏 This job's status is ${{ job.status }}."
